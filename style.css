@@ -1,0 +1,420 @@
+/* 
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+} */
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image:linear-gradient(to right, #DECBA4, #3E5151); 
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+header{
+    position: sticky; /* Set the navbar to fixed position */
+    top: 0;
+    background-color: rgba(40, 42, 43, 0.7);
+    height:40px;
+}
+
+
+li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: none;
+
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;  
+}
+
+.nav__links li a{
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    padding: 0 20px;
+}
+
+
+.nav__links li a:hover{
+    color:#DECBA4;
+}
+
+
+
+.circular-frame {
+    width: 450px; 
+    height: 450px;
+    border-radius: 50%; 
+    overflow: hidden;
+    float: left; 
+    margin-right: 20px; 
+    /* margin-left: 100px; */
+    margin-top: 100px;
+    border: 2px solid #0088a9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    animation: shadows 5s infinite;
+}
+
+@keyframes shadows {
+    0% { box-shadow: #48abe0 0 0 150px; }
+    50% { box-shadow: blueviolet 0 0 150px; }
+    75% { box-shadow: rebeccapurple 0 0 150px;}
+    100% { box-shadow: #48abe0 0 0 150px; }
+}
+
+
+.circular-frame img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.content{
+    display: flex;
+    margin-left: 200px;
+}
+
+.text{
+    margin:150px 10px 10px 60px;
+}
+
+.text h1{
+    font-size: 60px;
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+    margin-top: -60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text h2{
+    font-size: 30px;
+}
+
+.text p{
+    font-size: 30px;
+}
+
+
+
+.name {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: type 3s steps(60) infinite ;
+    text-shadow: 0 0 10px #DECBA4, 0 0 20px #DECBA4, 0 0 30px #DECBA4;
+    
+}
+
+@keyframes type {
+    100% {
+        width: 100%;
+    }
+}
+
+#about {
+    padding: 20px 20px 20px 20px;
+    margin: 100px auto auto auto;
+    /* justify-content: center;
+    align-items: center; */
+    width: 60%;
+    border-radius: 10px;
+    background-color: #3E5151;
+    color: #DECBA4;
+    outline: 8px solid #3E5151;
+    border: 4px solid #DECBA4;
+}
+
+.about-content{
+    justify-content: center;
+    align-items: center;
+    display:block;
+    margin: 20px;
+}
+
+#about h1{
+    text-align: center;
+    font-size: 40px;
+}
+#about p{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#projects{
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#projects .box{
+    font-size: 25px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid #282a2b;
+    border-radius: 15px;
+    background: radial-gradient(circle at center, #86a4b1, #2C5364);
+
+    width:350px;
+    height:100px;
+}
+
+
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin:100px auto auto auto;
+  }
+  
+  .project-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    font-size: 30px;
+    padding: 0px;
+    padding-top: 0px;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-card img {
+    width: 80%; 
+    height: auto; 
+    max-height: 100%;
+  }
+
+  .project-card h3{
+    text-align: center;
+    padding: 15px;
+    margin:0;
+    color:white;
+  }
+
+  .project-card p{
+    font-size: 20px;
+    color:#edf0f1;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hover-info {
+    display: none;
+  }
+  
+  .project-card:hover .hover-info {
+    display: block;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color:#13232a;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  .hover-info p{
+    color:#13232a;
+
+  }
+
+  .hover-info a{
+    color: white;
+    font-size: large;
+  }
+
+  .view{
+    background-color: #13232a;
+    color: white;
+  }
+  
+  .hover-info .view:hover{
+    background-color:#3E5151;
+  }
+
+
+
+  #contact {
+    padding: 40px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  #contact h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #DECBA4;
+  }
+  
+
+  
+  #contact .contact-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #contact .contact-details li {
+    display: inline-block;
+    margin: 0 20px 20px 70px;
+  }
+  
+  #contact .contact-details li a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+  }
+  
+  #contact .contact-details li a i {
+    margin-right: 10px;
+    font-size: 1.6em;
+    color: #626162;
+  }
+  
+  #contact .contact-details li a span {
+    font-weight: bold;
+    color: #c5b189;
+  }
+  
+ .contact-details li a:hover {
+    color: #fcfcfc;
+  }
+
+
+
+  .resume {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+  }
+  .header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  #aboutme{
+    font-size: 20px;
+  }
+  
+  .skills {
+    padding-bottom: 10px;
+  }
+
+  .skills p{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .skills-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 25px;
+  }
+  .skills-list li {
+    padding: 5px 0;
+    font-size: 20px;
+  }
+  .skills-list li:before {
+    content: "- ";
+    padding-right: 5px;
+  }
+
+  .education p{
+    font-size: 30px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    margin-bottom: 50px;
+  }
+  
+  .education h2{
+    text-align: center;
+  }
+
+  .institution{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .dates{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .project-experience p{
+    font-size: 30px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    margin-bottom: 50px;
+  }
+
+  .project-experience ul li{
+    font-size: 20px;
+  }
+
+  .project-experience h3{
+    margin-top: 40px;
+  }
+
+
+  
+  
+  
+
+
+
