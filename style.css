@@ -1,8 +1,6 @@
-/* 
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-} */
+html{
+  font-size: 62.5%;
+}
 
 body, html {
     margin: 0;
@@ -11,24 +9,24 @@ body, html {
 
 body {
     font-family: Arial, sans-serif;
-    background-image:linear-gradient(to right, #DECBA4, #3E5151); 
+    background-color: #f5cebd;
 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 header{
-    position: sticky; /* Set the navbar to fixed position */
+    position: sticky;
     top: 0;
     background-color: rgba(40, 42, 43, 0.7);
-    height:40px;
+    height:4rem;
 }
 
 
 li, a, button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -37,8 +35,9 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 10%;
+    padding: 1rem 5rem;
     background-color: none;
+    margin-right: 0;
 
 }
 
@@ -56,11 +55,11 @@ header{
 }
 
 .nav__links li a{
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #edf0f1;
     text-decoration: none;
     transition: all 0.3s ease 0s;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
 
@@ -71,24 +70,24 @@ header{
 
 
 .circular-frame {
-    width: 450px; 
-    height: 450px;
+    width: 45rem; 
+    height: 45rem;
     border-radius: 50%; 
     overflow: hidden;
     float: left; 
-    margin-right: 20px; 
+    margin-right: 2rem; 
     /* margin-left: 100px; */
-    margin-top: 100px;
-    border: 2px solid #0088a9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    margin-top: 10rem;
+    border: .5rem solid #0088a9;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); 
     animation: shadows 5s infinite;
 }
 
 @keyframes shadows {
-    0% { box-shadow: #48abe0 0 0 150px; }
-    50% { box-shadow: blueviolet 0 0 150px; }
-    75% { box-shadow: rebeccapurple 0 0 150px;}
-    100% { box-shadow: #48abe0 0 0 150px; }
+    0% { box-shadow: #48abe0 0 0 15rem; }
+    50% { box-shadow: blueviolet 0 0 15rem; }
+    75% { box-shadow: rebeccapurple 0 0 15rem;}
+    100% { box-shadow: #48abe0 0 0 15rem; }
 }
 
 
@@ -101,28 +100,28 @@ header{
 
 .content{
     display: flex;
-    margin-left: 200px;
+    margin-left: 20rem;
 }
 
 .text{
-    margin:150px 10px 10px 60px;
+    margin:15rem 1rem 1rem 6rem;
 }
 
 .text h1{
-    font-size: 60px;
-    padding: 0px;
+    font-size: 6rem;
+    padding: 0rem;
     text-align: center;
-    margin: 0px;
-    margin-top: -60px;
+    margin: 0rem;
+    margin-top: -6rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .text h2{
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .text p{
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 
@@ -132,7 +131,7 @@ header{
     white-space: nowrap;
     width: 0;
     animation: type 3s steps(60) infinite ;
-    text-shadow: 0 0 10px #DECBA4, 0 0 20px #DECBA4, 0 0 30px #DECBA4;
+    text-shadow: 0 0 1rem #DECBA4, 0 0 2rem #DECBA4, 0 0 3rem #DECBA4;
     
 }
 
@@ -143,31 +142,31 @@ header{
 }
 
 #about {
-    padding: 20px 20px 20px 20px;
-    margin: 100px auto auto auto;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 10rem auto auto auto;
     /* justify-content: center;
     align-items: center; */
     width: 60%;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: #3E5151;
     color: #DECBA4;
-    outline: 8px solid #3E5151;
-    border: 4px solid #DECBA4;
+    outline: .8rem solid #3E5151;
+    border: .4rem solid #DECBA4;
 }
 
 .about-content{
     justify-content: center;
     align-items: center;
     display:block;
-    margin: 20px;
+    margin: 2rem;
 }
 
 #about h1{
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
 }
 #about p{
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center;
 
 }
@@ -182,18 +181,18 @@ header{
 
 
 #projects .box{
-    font-size: 25px;
-    margin-top: 150px;
+    font-size: 2.5rem;
+    margin-top: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 3px solid #282a2b;
-    border-radius: 15px;
+    border: .3rem solid #282a2b;
+    border-radius: 1.5rem;
     background: radial-gradient(circle at center, #86a4b1, #2C5364);
 
-    width:350px;
-    height:100px;
+    width:35rem;
+    height:10rem;
 }
 
 
@@ -201,19 +200,20 @@ header{
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
-    margin:100px auto auto auto;
+    gap: 5rem;
+    margin:10rem auto auto auto;
+    justify-content: center;
   }
   
   .project-card {
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    font-size: 30px;
-    padding: 0px;
-    padding-top: 0px;
-    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    font-size: 3rem;
+    padding: 0rem;
+    padding-top: 0rem;
+    box-shadow: 0rem 0rem 3rem rgb(255, 255, 255);
     transition: all 0.3s ease;
-    width: 350px;
+    width: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,19 +228,19 @@ header{
 
   .project-card h3{
     text-align: center;
-    padding: 15px;
+    padding: 1.5rem;
     margin:0;
     color:white;
   }
 
   .project-card p{
-    font-size: 20px;
+    font-size: 2rem;
     color:#edf0f1;
   }
   
   .project-card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.2);
   }
   
   .hover-info {
@@ -249,11 +249,11 @@ header{
   
   .project-card:hover .hover-info {
     display: block;
-    padding: 10px;
+    padding: 1rem;
     background-color: #f5f5f5;
     color:#13232a;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 1.5rem;
   }
 
   .hover-info p{
@@ -269,6 +269,8 @@ header{
   .view{
     background-color: #13232a;
     color: white;
+    border-radius: 1rem;
+    padding: 1rem;
   }
   
   .hover-info .view:hover{
@@ -278,16 +280,16 @@ header{
 
 
   #contact {
-    padding: 40px;
+    padding: 4rem;
     background-color: #222;
     color: #fff;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 15rem;
   }
   
   #contact h2 {
-    font-size: 2em;
-    margin-bottom: 40px;
+    font-size: 4rem;
+    margin-bottom: 10rem;
     color: #DECBA4;
   }
   
@@ -296,26 +298,26 @@ header{
   #contact .contact-details {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: 8rem;
   }
   
   #contact .contact-details li {
     display: inline-block;
-    margin: 0 20px 20px 70px;
+    margin: 0 2rem 2rem 7rem;
   }
   
   #contact .contact-details li a {
     color: inherit;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 2.4rem;
     display: flex;
     align-items: center;
   }
   
   #contact .contact-details li a i {
-    margin-right: 10px;
-    font-size: 1.6em;
-    color: #626162;
+    margin-right: 1rem;
+    font-size: 2.8rem;
+    color: #acacac;
   }
   
   #contact .contact-details li a span {
@@ -329,265 +331,208 @@ header{
 
 
 
-  .resume {
-    width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    color: white;
-  }
   .header {
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
+    color:white;
   }
 
   #aboutme{
-    font-size: 20px;
-  }
-  
-  .skills {
-    padding-bottom: 10px;
+    font-size: 2rem;
+    color:white;
   }
 
-  .skills p{
+  .about-heading{
     text-align: center;
-    font-size: 30px;
+    font-size: 4rem;
     text-decoration: underline;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:30px;
+    color:white;
   }
-  .skills-list {
+  .description {
     padding: 0;
-    margin: 0;
+    margin: 0rem;
     list-style: none;
-    font-size: 25px;
+    font-size: 2.5rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    color:white;
   }
-  .skills-list li {
-    padding: 5px 0;
+  .description li {
+    padding: .5rem 0;
+    font-size: 2rem;
+    list-style-type: disc;
+    margin-left:50px;
+  }
+
+  .description h3{
+    margin-left:5rem;
+  }
+
+  hr{
+    margin:5rem;
+  }
+
+
+
+@media(max-width:600px){
+
+  html{
+    padding: 0;
+    margin:0;
+  }
+
+  body{
+    background-color: #f5cebd;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .nav__links{
+    display:flex;
+    text-align: left;
+    gap:0;
+  }
+
+  .nav__links li a{
+    font-size: 2.2rem;
+    padding:1rem;
+  }
+
+  header{
+    width:100%;
+    height:7rem;
+    padding:.3rem;
+  }
+
+  #about{
+    width:85%;
+    height:fit-content;
+    width:fit-content;
+    font-size: 80%;
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(32, 178, 170, 0.4);
+    color:#13232a;
+  }
+
+  #aboutme{
+    margin:0;
+
+  }
+
+  .about-content{
+    font-size:10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    color:#13232a;
+    margin:0;
+    
+  }
+
+  .description{
+    margin:0;
+    color:#13232a;
+  }
+
+  .description li{
+    margin:0;
+    color:#13232a;
+  }
+
+  .about-heading{
+    margin:0;
+    color:#13232a;
+  }
+
+  hr{
+    margin:3rem;
+    color:#13232a;
+  }
+
+  #aboutme{
+    color:#13232a;
+    font-size: 10px;
+    margin:0;
+    
+  }
+  .header{
+    color:#13232a;
+  }
+
+  .content{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin:0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circular-frame{
+    width:30rem;
+    height:30rem;
+    margin-bottom: 0;
+  }
+
+  .text{
+    width:80%;
+    height:30%;
+    margin:0;
+    padding:0;
+  }
+
+  .text h1{
+    font-size: 3.5rem;
+    margin-top: -40px;
+  }
+
+  .box h1{
+    font-size: 4rem;
+    padding: 0%;
+    margin:0;
+
+  }
+
+  .box{
+    padding:0px;
+  }
+
+  .projects-grid{
+    margin-left:20px;
+    margin-right: 20px;
+    max-width: 90%;
+    
+  }
+
+  ul.contact-details span{
     font-size: 20px;
   }
-  .skills-list li:before {
-    content: "- ";
-    padding-right: 5px;
+
+
+  .contact-details ul li a{
+    padding:0px;
+    margin-left:-90px;
+    padding-inline-start: 0px;
   }
 
-  .education p{
-    font-size: 30px;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: underline;
-    margin-bottom: 50px;
-  }
-  
-  .education h2{
-    text-align: center;
+  .contact-details a{
+    margin-left:-80px;
   }
 
-  .institution{
-    font-size: 25px;
-    text-align: center;
-  }
-
-  .dates{
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    font-size: 25px;
-  }
-
-  .project-experience p{
-    font-size: 30px;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: underline;
-    margin-bottom: 50px;
-  }
-
-  .project-experience ul li{
-    font-size: 20px;
-  }
-
-  .project-experience h3{
-    margin-top: 40px;
+  #contact{
+    width:81%;
   }
 
 
-@media screen and (max-width: 360px) {
-    header {
-        padding: 0px;
-    }
-
-    body, html {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-    }
-
-    .navbar{
-      width:100vw;
-      display:flex; 
-      padding:0;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .nav__links ul{
-      width:100vw;
-      justify-content: center;
-      align-items: center;
-      display:flex
-    }
-
-    .nav__links li a{
-      font-size: 4vw;
-      padding: 10px;
-      margin:0;
-
-    }
-
-    body{
-      background-color: cover;
-    }
-
-    .content {
-        flex-direction: column;
-        margin-left: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .circular-frame {
-        width: 70vw;
-        height: auto;
-        margin-top: 20px;
-        margin-right: 0;
-    }
-
-    .content .text {
-        margin: 0px;
-        text-align: center;
-    }
-
-    .content .text h1 {
-        font-size: 25px;
-        margin-left: 60px;
-        margin-top: -30px;
-    }
-
-    .content .text p{
-      font-size: 20px;
-    }
-
-    .resume{
-      margin:0;
-      padding:0;
-    }
 
 
-    #about {
-        width: 80%;
-        margin: 50px auto;
-        padding: 0px;
-        font-size: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
-
-    }
-    
-    u{
-      font-size: 30px;
-    }
-
-    .about-content h2{
-      font-size: 20px;
-    }
-    
-    .skills-list li{
-      font-size: 15px;
-    }
-
-    .institution, .dates{
-      font-size: 20px;
-    }
-    .education p{
-      margin:10px;
-    }
-
-    .education h2{
-      font-size: 18px;
-    }
-
-    .project-experience h3{
-      font-size: 20px;
-      font-weight: 100;
-    }
-    .project-experience ul li{
-      font-size: 15px;
-    }
-
-
-    p#aboutme{
-      font-size:20px;
-    }
-
-    #projects .box{
-      margin:20px;
-      margin-bottom: 40px;
-    }
-
-    .projects-grid {
-        margin: 20px auto;
-    }
-
-    .project-card {
-        width: 70%;
-        margin: 0 auto 20px;
-    }
-
-    #projects .box {
-        margin-top: 50px;
-        width: 90%;
-    }
-
-    #contact {
-        margin-top: 50px;
-    }
-
-    #contact h2 {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-    }
-
-    ul.contact-details {
-      display: grid;
-      margin:0;
-      padding:0;
-      font-size: 10px;
-      text-align: center;
-    }
-
-    ul.contact-details a{
-      text-align: center;
-      margin-left: -70px;
-    }
-
-    ul.contact-details li span{
-      font-size: 18px;
-    }
-
-    ul.contact-details li {
-        font-size: 15px;
-
-    }
-
-    .resume {
-        width: 90%;
-    }
 }
- 
-
-  
-  
-  
-
-
 
